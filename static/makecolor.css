@@ -1,0 +1,32 @@
+* { margin: 0; }
+* + * { margin-top: .75em; }
+body {
+  margin: 0;
+  font: 14px/1.5 sans-serif;
+}
+.main {
+  padding: .75em;
+}
+.r__p {
+  display: inline-block;
+  width: 10px;
+  height: 16.18px;
+  vertical-align: top;
+  margin-top: 0;
+}
+.ctrl__set {
+  float: left;
+  width: 25em;
+  padding: .75em;
+  border: 1px solid;
+  margin: 0 .75em .75em 0;
+}
+.ctrl__slider {
+  display: inline-block;
+  width: 24em;
+}
+.foot {
+  clear: left;
+  margin: .75em 0 0;
+  padding: 0 .75em;
+}

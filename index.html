@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/makecolor.min.css">
+    <title>Create Rainbows</title>
+  </head>
+  <body>
+    <article class="main">
+      <div class="r">
+        <p id="result" class="r__b"></p>
+        <p id="result_r" class="r__b"></p>
+        <p id="result_g" class="r__b"></p>
+        <p id="result_b" class="r__b"></p>
+      </div>
+      <div class="ctrl">
+        <fieldset class="ctrl__set">
+          <p>
+            <label>
+              <input class="ctrl__lock" type="checkbox" id="same_freq" value="1">
+              Lock frequencies</label>
+          </p>
+          <p>
+            <label for="frequency1">Frequency 1 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="frequency1" data-value="0.2" data-step=".01" data-min="-1" data-max="5"></span>
+            <label class="ctrl__pi" title="multiply above with &pi;">(<input type="checkbox" id="frequency1_pi" value="1"> &times;&pi;)</label>
+          </p>
+          <p>
+            <label for="frequency2">Frequency 2 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="frequency2" data-value="0.2" data-step=".01" data-min="-1" data-max="5"></span>
+            <label class="ctrl__pi" title="multiply above with &pi;">(<input type="checkbox" id="frequency2_pi" value="1"> &times;&pi;)</label>
+          </p>
+          <p>
+            <label for="frequency3">Frequency 3 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="frequency3" data-value="0.2" data-step=".01" data-min="-1" data-max="5"></span>
+            <label class="ctrl__pi" title="multiply above with &pi;">(<input type="checkbox" id="frequency3_pi" value="1"> &times;&pi;)</label>
+          </p>
+        </fieldset>
+        <fieldset class="ctrl__set">
+          <p>
+            <label>
+              <input class="ctrl__lock" type="checkbox" id="same_phase" value="1">
+              Lock phases</label>
+          </p>
+          <p>
+            <label for="phase1">Phase 1 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="phase1" data-step=".1" data-min="-10" data-max="10"></span>
+          </p>
+          <p>
+            <label for="phase2">Phase 2 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="phase2" data-value="2" data-step=".1" data-min="-10" data-max="10"></span>
+          </p>
+          <p>
+            <label for="phase3">Phase 3 (<em class="ctrl__value">0</em>):</label><br>
+            <span class="ctrl__slider" id="phase3" data-value="4" data-step=".1" data-min="-10" data-max="10"></span>
+          </p>
+        </fieldset>
+        <fieldset class="ctrl__set">
+          <p>
+            <label for="center">Center (<em class="ctrl__value">128</em>):</label><br>
+            <span class="ctrl__slider" id="center" data-value="128" data-step="1" data-min="0" data-max="255"></span>
+          </p>
+          <p>
+            <label for="width">Width (<em class="ctrl__value">127</em>):</label><br>
+            <span class="ctrl__slider" id="width" data-value="127" data-step="1" data-min="0" data-max="255"></span>
+          </p>
+        </fieldset>
+        <fieldset class="ctrl__set">
+          <p>
+            <label for="len">Preview Length (<em class="ctrl__value">50</em>):</label><br>
+            <span class="ctrl__slider" id="len" data-value="50" data-step="1" data-min="1" data-max="255"></span>
+          </p>
+        </fieldset>
+      </div>
+      <p class="foot"><a href="http://krazydad.com/tutorials/makecolors.php">Source</a></p>
+    </article>
+    <script src="static/makecolor.min.js"></script>
+  </body>
+</html>
